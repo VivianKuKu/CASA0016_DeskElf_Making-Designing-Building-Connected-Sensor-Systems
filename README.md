@@ -38,7 +38,7 @@
 #### 3. Communicating over LoRa
 
 #### 4. Enclosure Design for 3D Printing
-
+* https://www.hubs.com/knowledge-base/enclosure-design-3d-printing-step-step-guide/
 
 #### 5. Sensor Data Visualization and Interaction
 
