@@ -70,17 +70,15 @@ DeskElf's mobile App can be used to allow users to set up their comfort settings
 
 
 ## Reference
-Arduino (no date) Arduino - Serial. Available at: https://www.arduino.cc/en/reference/serial&gt (Accessed: 15 December 2021).
-Desining Buildings (2021) Indoor environmental quality. https://www.designingbuildings.co.uk. Available at: https://www.designingbuildings.co.uk/wiki/Indoor_environmental_quality (Accessed: 3 January 2022).
-Graham Coulby et al. (2020) ‘A Scoping Review of Technological Approaches to Environmental Monitoring’, International Journal of Environmental Research and Public Health, (International Journal of Environmental Research and Public Health), p. 25.
-John Rampton (2020) The Benefits of the Pomodoro Technique, The Benefits of the Pomodoro Technique. Available at: https://www.calendar.com/blog/the-benefits-of-the-pomodoro-technique/ (Accessed: 29 December 2021).
-Kat Boogaard (no date) The Pomodoro Technique Really Works for Productivity | The Muse. Available at: https://www.themuse.com/advice/take-it-from-someone-who-hates-productivity-hacksthe-pomodoro-technique-actually-works (Accessed: 1 January 2022).
-LoRa-Developers (2021) LoRa best practices Packet Optimisation Introduction | DEVELOPER PORTAL. Available at: https://lora-developers.semtech.com/documentation/tech-papers-and-guides/the-book/intr/ (Accessed: 29 December 2021).
-Michael Contreras, M. (2022) arduino-timer - library for delaying function calls. Available at: https://github.com/contrem/arduino-timer (Accessed: 1 January 2022).
-The Things Network (2021a) Limitations, The Things Network. Available at: https://www.thethingsnetwork.org/docs/lorawan/limitations/ (Accessed: 12 December 2021).
-The Things Network (2021b) Quick Start, The Things Network. Available at: https://www.thethingsnetwork.org/docs/devices/uno/quick-start/ (Accessed: 5 December 2021).
-The Things Network (2021c) TTN Mapper, TTN Mapper. Available at: https://ttnmapper.org/heatmap/ (Accessed: 29 December 2021).
-The Things Network (2021d) Working with Bytes, The Things Network. Available at: https://www.thethingsnetwork.org/docs/devices/bytes/ (Accessed: 10 December 2021).
-U.S. Green Building Council (2014) Green Building 101: What is indoor environmental quality? Available at: https://www.usgbc.org/articles/green-building-101-what-indoor-environmental-quality (Accessed: 3 January 2022).
-![image](https://user-images.githubusercontent.com/52306317/148702165-22b4c020-b1a9-4a54-8034-1bc0d986878f.png)
-
+* Arduino (no date) Arduino - Serial. Available at: https://www.arduino.cc/en/reference/serial&gt (Accessed: 15 December 2021).
+* Desining Buildings (2021) Indoor environmental quality. https://www.designingbuildings.co.uk. Available at: https://www.designingbuildings.co.uk/wiki/Indoor_environmental_quality (Accessed: 3 January 2022).
+* Graham Coulby et al. (2020) ‘A Scoping Review of Technological Approaches to Environmental Monitoring’, International Journal of Environmental Research and Public Health, (International Journal of Environmental Research and Public Health), p. 25.
+* John Rampton (2020) The Benefits of the Pomodoro Technique, The Benefits of the Pomodoro Technique. Available at: https://www.calendar.com/blog/the-benefits-of-the-pomodoro-technique/ (Accessed: 29 December 2021).
+* Kat Boogaard (no date) The Pomodoro Technique Really Works for Productivity | The Muse. Available at: https://www.themuse.com/advice/take-it-from-someone-who-hates-productivity-hacksthe-pomodoro-technique-actually-works (Accessed: 1 January 2022).
+* LoRa-Developers (2021) LoRa best practices Packet Optimisation Introduction | DEVELOPER PORTAL. Available at: https://lora-developers.semtech.com/documentation/tech-papers-and-guides/the-book/intr/ (Accessed: 29 December 2021).
+* Michael Contreras, M. (2022) arduino-timer - library for delaying function calls. Available at: https://github.com/contrem/arduino-timer (Accessed: 1 January 2022).
+* The Things Network (2021a) Limitations, The Things Network. Available at: https://www.thethingsnetwork.org/docs/lorawan/limitations/ (Accessed: 12 December 2021).
+* The Things Network (2021b) Quick Start, The Things Network. Available at: https://www.thethingsnetwork.org/docs/devices/uno/quick-start/ (Accessed: 5 December 2021).
+* The Things Network (2021c) TTN Mapper, TTN Mapper. Available at: https://ttnmapper.org/heatmap/ (Accessed: 29 December 2021).
+* The Things Network (2021d) Working with Bytes, The Things Network. Available at: https://www.thethingsnetwork.org/docs/devices/bytes/ (Accessed: 10 December 2021).
+* U.S. Green Building Council (2014) Green Building 101: What is indoor environmental quality? Available at: https://www.usgbc.org/articles/green-building-101-what-indoor-environmental-quality (Accessed: 3 January 2022).
