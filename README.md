@@ -46,6 +46,7 @@ Coding in Arduino IDE is an iterative process that requires several step-by-step
 To use these sensors and actuators, multiple libraries are needed. Besides, there are six values about indoor environmental quality required to be shown on the LCD, so the automatic screen-scrolling effect is designed by coding.
 
 Regarding the Pomodoro Technique, instead of using the delay function that will block other codes, the Timer library is adopted to support calling functions in/at/every specified unit of time (Michael Contreras, 2022). Here, the code will call an alert function every 25 minutes whenever the analogue reading of LDR is below 100 caused by the coverage of FOCUS signage. And the alert function will make LED start blinking 5 times.
+
 As for The Things Uno board, Serial is reserved for USB CDC communication, while Serial 1 is used for communicating via TTL serial on pin 0 (RX) and pin 1 (TX) which allows communication between The Things Uno and the microchip LoRa module (Arduino). Also, it is important to get the information of the board such as DevEUI (a unique identifier assigned by manufacturer) and AppEUI (a global application ID) in the beginning. And since the bandwidth is a fixed resource that is shared by many devices and there is a limited airtime (LoRa-Developers, 2021), it is necessary to minimize the size of the payload by converting sensor values to unsigned integers––uint16_t––which contains 16 bits for a word. In the end, ttn.sendBytes() is used to send messages with an array of bytes and their size (The Things Network, 2021d).
 
 
