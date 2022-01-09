@@ -4,6 +4,7 @@
 
 > Indoor Environment Quality sensing & Pomodoro Technique
 
+![image](https://user-images.githubusercontent.com/52306317/148702262-67d348ca-873b-4f18-8bcf-a121bc2c9fcb.png)
 
 
 ## Background
@@ -48,12 +49,11 @@ For Pomodoro Technique, the LDR will trigger the countdown timer function when u
 
 ### 3. Communicating over LoRa
 
-### 4. Enclosure Design for 3D Printing
-* https://www.hubs.com/knowledge-base/enclosure-design-3d-printing-step-step-guide/
+### 4. Enclosure Design and 3D Printing
 
-### 5. Sensor Data Visualization and Interaction
+The enclosure of DeskElf contains three parts–– signage, lid and base. The signage allows users to plug in when they start to work, and it will cover the LDR beneath the lid and change the analogue reading of LDR and ultimately trigger the countdown timer function. The lid is used to hold signage, light sensor (TCS34725) and LED. And the base is designed to accommodate The Things Uno board, breadboard and other components with some holes on the walls to keep the circulation of air.
 
-
+![image](https://user-images.githubusercontent.com/52306317/148702230-e8093f5d-290c-40f1-abb1-a462b57cb8f6.png)
 
 
 
