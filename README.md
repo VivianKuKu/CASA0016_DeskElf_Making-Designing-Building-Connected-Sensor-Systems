@@ -47,7 +47,16 @@ For Pomodoro Technique, the LDR will trigger the countdown timer function when u
 
 
 
-### 3. Communicating over LoRa
+### 3. The Things Network Setup
+
+The Things Network (TTN) is a global, open, and crowd-sourced initiative to create an Internet of Things data network over LoRaWAN technology. To send sensor data to TTN, one of the most important things is to check the coverage of the LoRa gateway in the TTN Mapper (The Things Network, 2021c) or to consider deploying a gateway by yourself. Once creating a TTN account, a new application should be created, and the device must be registered for the application. Besides, users should obtain the Frequency Plan according to the location of devices, as an example, EU863-870 is used in the United Kingdom. The step-by-step walkthrough can be found on the TTN website (The Things Network, 2021b).
+
+![image](https://user-images.githubusercontent.com/52306317/148702300-b9ca6c18-ed32-4e9e-a741-ec37c1f93dc5.png)
+
+What’s more, users should keep an eye on the limitation of The Things Network. Not only make the size of the payload as small as possible but also adjust the transmitting interval and the data rate if necessary (The Things Network, 2021a). However, DeskElf doesn’t go further to explore the best interval between messages, and it will transmit data every 12 seconds for now. Finally, the following code is used to decode the messages from the node.![image](https://user-images.githubusercontent.com/52306317/148702306-008920be-b349-4d68-b8e6-3bd3d919c7d1.png)
+
+![image](https://user-images.githubusercontent.com/52306317/148702308-9a7bc3db-c81a-41cd-96c1-716f253b1cbc.png)
+
 
 ### 4. Enclosure Design and 3D Printing
 
