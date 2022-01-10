@@ -50,7 +50,7 @@ For Pomodoro Technique, the LDR will trigger the countdown timer function when u
 Coding in Arduino IDE is an iterative process that requires several step-by-step testing to ensure the hardware, functions and libraries all work as estimated. 
 To use these sensors and actuators, multiple libraries are needed. Besides, there are six values about indoor environmental quality required to be shown on the LCD, so the automatic screen-scrolling effect is designed by coding.
 
-Refer to the test files in the repos to see how it works––
+**Refer to the testing files in the repos to see how it works––**
 
 1. **test_sgp30_DHT22_LCD**- https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_sgp30_DHT22_LCD
 2. **test_tcs34725**- https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_tcs34725
@@ -58,23 +58,27 @@ Refer to the test files in the repos to see how it works––
 
 Regarding the Pomodoro Technique, instead of using the delay function that will block other codes, the Timer library is adopted to support calling functions in/at/every specified unit of time (Michael Contreras, 2022). Here, the code will call an alert function every 25 minutes whenever the analogue reading of LDR is below 100 caused by the coverage of FOCUS signage. And the alert function will make LED start blinking 5 times.
 
-Refer to the test files in the repos to see how it works––
+**Refer to the test files in the repos to see how it works––**
 1. **test_PomodoroTimer**– https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_PomodoroTimer
 
-note: You should wire up LDR before testing and the countdown time for the testing file is 5 sec.
+(note: You should wire up LDR before testing and the countdown time for the testing file is 5 sec.)
 
 
 As for The Things Uno board, Serial is reserved for USB CDC communication, while Serial 1 is used for communicating via TTL serial on pin 0 (RX) and pin 1 (TX) which allows communication between The Things Uno and the microchip LoRa module (Arduino). Also, it is important to get the information of the board such as DevEUI (a unique identifier assigned by manufacturer) and AppEUI (a global application ID) in the beginning. And since the bandwidth is a fixed resource that is shared by many devices and there is a limited airtime (LoRa-Developers, 2021), it is necessary to minimize the size of the payload by converting sensor values to unsigned integers––uint16_t––which contains 16 bits for a word. In the end, ttn.sendBytes() is used to send messages with an array of bytes and their size (The Things Network, 2021d).
 
-The setup process includes
+**The setup process includes––**
 
 1. Setup Arduino IDE
 2. Get your Device EUI on Arduino IDE 
 3. Create an Account on TTN
-4. Register your Device on TTN
-5. Activate your Device on Arduino IDE 
+4. Add an Application on TTN
+5. Register your Device on TTN
+6. Activate your Device on Arduino IDE 
 
 The step-by-step setup can be found in the Quick Start page of The Things Network–– https://www.thethingsnetwork.org/docs/devices/uno/quick-start/
+
+You can find full template in here–– https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/blob/main/DeskElf_LoRa/DeskElf_LoRa.ino
+
 
 ### 3. The Things Network Setup
 
