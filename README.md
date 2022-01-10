@@ -93,12 +93,14 @@ TTN Frequency Plans– https://www.thethingsnetwork.org/docs/lorawan/frequency-p
 
 TTN Limitation– https://www.thethingsnetwork.org/docs/lorawan/limitations/
 
+TTN data application– https://www.thethingsnetwork.org/docs/applications/mqtt/
+
 
 ### 4. Enclosure Design and 3D Printing
 
 The enclosure of DeskElf contains three parts–– signage, lid and base. The signage allows users to plug in when they start to work, and it will cover the LDR beneath the lid and change the analogue reading of LDR and ultimately trigger the countdown timer function. The lid is used to hold signage, light sensor (TCS34725) and LED. And the base is designed to accommodate The Things Uno board, breadboard and other components with some holes on the walls to keep the circulation of air.
 
-DeskElf is printe by Prusa 3D printer and you can find out the 3D printing files in the repo– 
+DeskElf is printed by Prusa 3D printer and you can find out the 3D printing files in the repo– 
 https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/Enclosure_3D%20printing
 
 * .stl: 3D model file format which can be used in Fusion360 or other CAS softwares
