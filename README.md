@@ -66,8 +66,15 @@ note: You should wire up LDR before testing and the countdown time for the testi
 
 As for The Things Uno board, Serial is reserved for USB CDC communication, while Serial 1 is used for communicating via TTL serial on pin 0 (RX) and pin 1 (TX) which allows communication between The Things Uno and the microchip LoRa module (Arduino). Also, it is important to get the information of the board such as DevEUI (a unique identifier assigned by manufacturer) and AppEUI (a global application ID) in the beginning. And since the bandwidth is a fixed resource that is shared by many devices and there is a limited airtime (LoRa-Developers, 2021), it is necessary to minimize the size of the payload by converting sensor values to unsigned integers––uint16_t––which contains 16 bits for a word. In the end, ttn.sendBytes() is used to send messages with an array of bytes and their size (The Things Network, 2021d).
 
-1.
+The setup process includes
 
+1. Setup Arduino IDE
+2. Get your Device EUI on Arduino IDE 
+3. Create an Account on TTN
+4. Register your Device on TTN
+5. Activate your Device on Arduino IDE 
+
+The step-by-step setup can be found in the Quick Start page of The Things Network–– https://www.thethingsnetwork.org/docs/devices/uno/quick-start/
 
 ### 3. The Things Network Setup
 
