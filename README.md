@@ -50,7 +50,7 @@ For Pomodoro Technique, the LDR will trigger the countdown timer function when u
 Coding in Arduino IDE is an iterative process that requires several step-by-step testing to ensure the hardware, functions and libraries all work as estimated. 
 To use these sensors and actuators, multiple libraries are needed. Besides, there are six values about indoor environmental quality required to be shown on the LCD, so the automatic screen-scrolling effect is designed by coding.
 
-**Refer to the testing files in the repos to see how it works––**
+**Refer to the testing files in the repos to see how it works:**
 
 1. [**test_sgp30_DHT22_LCD**](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_sgp30_DHT22_LCD)
 2. [**test_tcs34725**](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_tcs34725)
@@ -58,7 +58,7 @@ To use these sensors and actuators, multiple libraries are needed. Besides, ther
 
 Regarding the Pomodoro Technique, instead of using the delay function that will block other codes, the Timer library is adopted to support calling functions in/at/every specified unit of time (Michael Contreras, 2022). Here, the code will call an alert function every 25 minutes whenever the analogue reading of LDR is below 100 caused by the coverage of FOCUS signage. And the alert function will make LED start blinking 5 times.
 
-**Refer to the testing files in the repos to see how it works––**
+**Refer to the testing files in the repos to see how it works:**
 1. [**test_PomodoroTimer**](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_PomodoroTimer)
 
 (note: You should wire up LDR before testing and the countdown time for the testing file is 5 sec.)
