@@ -91,16 +91,15 @@ TTN Frequency Plan by Country– https://www.thethingsnetwork.org/docs/lorawan/f
 
 TTN Frequency Plans– https://www.thethingsnetwork.org/docs/lorawan/frequency-plans/
 
-![image](https://user-images.githubusercontent.com/52306317/148702300-b9ca6c18-ed32-4e9e-a741-ec37c1f93dc5.png)
-
-What’s more, users should keep an eye on the limitation of The Things Network. Not only make the size of the payload as small as possible but also adjust the transmitting interval and the data rate if necessary (The Things Network, 2021a). However, DeskElf doesn’t go further to explore the best interval between messages, and it will transmit data every 12 seconds for now. Finally, the following code is used to decode the messages from the node.
-
-![image](https://user-images.githubusercontent.com/52306317/148702308-9a7bc3db-c81a-41cd-96c1-716f253b1cbc.png)
+TTN Limitation– https://www.thethingsnetwork.org/docs/lorawan/limitations/
 
 
 ### 4. Enclosure Design and 3D Printing
 
 The enclosure of DeskElf contains three parts–– signage, lid and base. The signage allows users to plug in when they start to work, and it will cover the LDR beneath the lid and change the analogue reading of LDR and ultimately trigger the countdown timer function. The lid is used to hold signage, light sensor (TCS34725) and LED. And the base is designed to accommodate The Things Uno board, breadboard and other components with some holes on the walls to keep the circulation of air.
+
+Find out the 3D printing files in the repo– https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/Enclosure_3D%20printing
+
 
 ![image](https://user-images.githubusercontent.com/52306317/148702230-e8093f5d-290c-40f1-abb1-a462b57cb8f6.png)
 
@@ -126,8 +125,4 @@ DeskElf's mobile App can be used to allow users to set up their comfort settings
 * Kat Boogaard (no date) The Pomodoro Technique Really Works for Productivity | The Muse. Available at: https://www.themuse.com/advice/take-it-from-someone-who-hates-productivity-hacksthe-pomodoro-technique-actually-works (Accessed: 1 January 2022).
 * LoRa-Developers (2021) LoRa best practices Packet Optimisation Introduction | DEVELOPER PORTAL. Available at: https://lora-developers.semtech.com/documentation/tech-papers-and-guides/the-book/intr/ (Accessed: 29 December 2021).
 * Michael Contreras, M. (2022) arduino-timer - library for delaying function calls. Available at: https://github.com/contrem/arduino-timer (Accessed: 1 January 2022).
-* The Things Network (2021a) Limitations, The Things Network. Available at: https://www.thethingsnetwork.org/docs/lorawan/limitations/ (Accessed: 12 December 2021).
-* The Things Network (2021b) Quick Start, The Things Network. Available at: https://www.thethingsnetwork.org/docs/devices/uno/quick-start/ (Accessed: 5 December 2021).
-* The Things Network (2021c) TTN Mapper, TTN Mapper. Available at: https://ttnmapper.org/heatmap/ (Accessed: 29 December 2021).
-* The Things Network (2021d) Working with Bytes, The Things Network. Available at: https://www.thethingsnetwork.org/docs/devices/bytes/ (Accessed: 10 December 2021).
 * U.S. Green Building Council (2014) Green Building 101: What is indoor environmental quality? Available at: https://www.usgbc.org/articles/green-building-101-what-indoor-environmental-quality (Accessed: 3 January 2022).
