@@ -52,14 +52,14 @@ To use these sensors and actuators, multiple libraries are needed. Besides, ther
 
 **Refer to the testing files in the repos to see how it works––**
 
-1. **test_sgp30_DHT22_LCD**- https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_sgp30_DHT22_LCD
-2. **test_tcs34725**- https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_tcs34725
+1. [**test_sgp30_DHT22_LCD**](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_sgp30_DHT22_LCD)
+2. [**test_tcs34725**](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_tcs34725)
 
 
 Regarding the Pomodoro Technique, instead of using the delay function that will block other codes, the Timer library is adopted to support calling functions in/at/every specified unit of time (Michael Contreras, 2022). Here, the code will call an alert function every 25 minutes whenever the analogue reading of LDR is below 100 caused by the coverage of FOCUS signage. And the alert function will make LED start blinking 5 times.
 
-**Refer to the test files in the repos to see how it works––**
-1. **test_PomodoroTimer**– https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_PomodoroTimer
+**Refer to the testing files in the repos to see how it works––**
+1. [**test_PomodoroTimer**](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_PomodoroTimer)
 
 (note: You should wire up LDR before testing and the countdown time for the testing file is 5 sec.)
 
@@ -75,48 +75,37 @@ As for The Things Uno board, Serial is reserved for USB CDC communication, while
 5. Register your Device on TTN
 6. Activate your Device on Arduino IDE 
 
-The step-by-step setup can be found in the Quick Start page of The Things Network–– https://www.thethingsnetwork.org/docs/devices/uno/quick-start/
+The step-by-step setup can be found in the [Quick Start page of The Things Network](https://www.thethingsnetwork.org/docs/devices/uno/quick-start/)
 
-You can find a full Arduino IDE template in the repo–– https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/blob/main/DeskElf_LoRa/DeskElf_LoRa.ino
+You can find a full Arduino IDE template in the [DeskElf_LoRa](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/blob/main/DeskElf_LoRa/DeskElf_LoRa.ino) in the repo.
 
 
 
 https://user-images.githubusercontent.com/52306317/148792711-05a1179f-6dff-44d0-82bc-69fd5b95dd27.mp4
 
 
-&nbsp
+
 ### 3. The Things Network Setup
 
 The Things Network (TTN) is a global, open, and crowd-sourced initiative to create an Internet of Things data network over LoRaWAN technology. Apart from setting up for Arduino IDE and TTN account, there are several issues should be considered.
 
 
-* **Check the coverage of the LoRa gateway**
+* **Check the coverage of the LoRa gateway: ** [TTN Mapper](https://ttnmapper.org/heatmap/)
 
-TTN Mapper– https://ttnmapper.org/heatmap/ 
-
-* **Check the Frequency Plan**
-
-TTN Frequency Plan by Country– https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country/
-
-TTN Frequency Plans– https://www.thethingsnetwork.org/docs/lorawan/frequency-plans/
+* **Check the Frequency Plan: ** [TTN Frequency Plan by Country](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country/) and [TTN Frequency Plans](https://www.thethingsnetwork.org/docs/lorawan/frequency-plans/)
 
 (note: DeskElf uses EU863-870 as it is based in the United Kingdom, you should change it to your frequency plan according to your location)
 
-* **Check the limitation of TTN**
+* **Check the limitation of TTN:** [TTN Limitation](https://www.thethingsnetwork.org/docs/lorawan/limitations/)
 
-TTN Limitation– https://www.thethingsnetwork.org/docs/lorawan/limitations/
-
-* **Check the further data application**
-
-TTN data application– https://www.thethingsnetwork.org/docs/applications/mqtt/
+* **Check the further data application: ** [TTN data application](https://www.thethingsnetwork.org/docs/applications/mqtt/)
 
 
 ### 4. Enclosure Design and 3D Printing
 
 The enclosure of DeskElf contains three parts–– signage, lid and base. The signage allows users to plug in when they start to work, and it will cover the LDR beneath the lid and change the analogue reading of LDR and ultimately trigger the countdown timer function. The lid is used to hold signage, light sensor (TCS34725) and LED. And the base is designed to accommodate The Things Uno board, breadboard and other components with some holes on the walls to keep the circulation of air.
 
-DeskElf is printed by Prusa 3D printer and you can find out the 3D printing files in the repo– 
-https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/Enclosure_3D%20printing
+DeskElf is printed by Prusa 3D printer and you can find out the [3D printing files](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/Enclosure_3D%20printing) in the repo.
 
 * .stl: 3D model file format which can be used in Fusion360 or other CAS softwares
 * .3mf: Open source file format which can be used in PrusaSlicer
