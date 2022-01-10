@@ -85,8 +85,10 @@ You can find a full Arduino IDE template in the repo–– https://github.com/Vi
 
 The Things Network (TTN) is a global, open, and crowd-sourced initiative to create an Internet of Things data network over LoRaWAN technology. To send sensor data to TTN, one of the most important things is to check the coverage of the LoRa gateway in the TTN Mapper (The Things Network, 2021c) or to consider deploying a gateway by yourself. Once creating a TTN account, a new application should be created, and the device must be registered for the application. Besides, users should obtain the Frequency Plan according to the location of devices, as an example, EU863-870 is used in the United Kingdom.
 
-TTN Mapper– https://ttnmapper.org/heatmap/
+TTN Mapper– https://ttnmapper.org/heatmap/ 
+
 TTN Frequency Plan by Country– https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country/
+
 TTN Frequency Plans– https://www.thethingsnetwork.org/docs/lorawan/frequency-plans/
 
 ![image](https://user-images.githubusercontent.com/52306317/148702300-b9ca6c18-ed32-4e9e-a741-ec37c1f93dc5.png)
