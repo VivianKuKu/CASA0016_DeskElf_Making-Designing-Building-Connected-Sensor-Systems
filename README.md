@@ -56,10 +56,11 @@ To use these sensors and actuators, multiple libraries are needed. Besides, ther
 2. [**test_tcs34725**](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_tcs34725)
 
 
-Regarding the Pomodoro Technique, instead of using the delay function that will block other codes, the Timer library is adopted to support calling functions in/at/every specified unit of time [(Michael Contreras, 2022)](https://github.com/contrem/arduino-timer). Here, the code will call an alert function every 25 minutes whenever the analogue reading of LDR is below 100 caused by the coverage of FOCUS signage. And the alert function will make LED start blinking 5 times.
+Regarding the Pomodoro Technique, instead of using the delay function that will block other codes, the Timer library is adopted to support calling functions in/at/every specified unit of time (Michael Contreras, 2022). Here, the code will call an alert function every 25 minutes whenever the analogue reading of LDR is below 100 caused by the coverage of FOCUS signage. And the alert function will make LED start blinking 5 times.
 
 **Refer to the testing files in the repos to see how it works:**
 1. [**test_PomodoroTimer**](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_PomodoroTimer)
+2. [**Timer Library:**](https://github.com/contrem/arduino-timer)
 
 (note: You should wire up LDR before testing and the countdown time for the testing file is 5 sec.)
 
