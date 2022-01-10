@@ -66,7 +66,7 @@ Regarding the Pomodoro Technique, instead of using the delay function that will 
 
 As for The Things Uno board, Serial is reserved for USB CDC communication, while Serial 1 is used for communicating via TTL serial on pin 0 (RX) and pin 1 (TX) which allows communication between The Things Uno and the microchip LoRa module (Arduino). Also, it is important to get the information of the board such as DevEUI (a unique identifier assigned by manufacturer) and AppEUI (a global application ID) in the beginning. And since the bandwidth is a fixed resource that is shared by many devices and there is a limited airtime (LoRa-Developers, 2021), it is necessary to minimize the size of the payload by converting sensor values to unsigned integers––uint16_t––which contains 16 bits for a word. In the end, ttn.sendBytes() is used to send messages with an array of bytes and their size (The Things Network, 2021d).
 
-**The setup process includes––**
+**The setup process includes:**
 
 1. Setup Arduino IDE
 2. Get your Device EUI on Arduino IDE 
@@ -75,7 +75,7 @@ As for The Things Uno board, Serial is reserved for USB CDC communication, while
 5. Register your Device on TTN
 6. Activate your Device on Arduino IDE 
 
-The step-by-step setup can be found in the [Quick Start page of The Things Network](https://www.thethingsnetwork.org/docs/devices/uno/quick-start/)
+The step-by-step setup can be found in the [Quick Start page on The Things Network](https://www.thethingsnetwork.org/docs/devices/uno/quick-start/)
 
 You can find a full Arduino IDE template in the [DeskElf_LoRa](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/blob/main/DeskElf_LoRa/DeskElf_LoRa.ino) in the repo.
 
