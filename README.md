@@ -34,7 +34,12 @@ The building process of DeskElf consists of 4 stages from hardware setup, Arduin
 
 ### 1. Hardware setup
 The reason for choosing The Things Uno (Arduino Leonardo) board is due to the data communication concern. Since DeskElf should work functionally wherever users work, its function must be low-power consumption and long-range coverage to reduce users’ hassle in charging and reconnecting. Therefore, the LoRa network, which can deliver a 2 to 3 km-wide coverage from its gateways in the urban area, becomes a feasible choice.
+
+Find out more information about The Things Uno board here:
+https://www.thethingsindustries.com/docs/devices/the-things-uno/
+
 For indoor environmental quality sensing, LCD is used to display real-time readings of each sensor which allows users to get updated information and take immediate action if they want. Besides, SGP30 and TCS34725 both are connected to The Things Uno board through I2C communication by occupying the SCL/SDA set and pins 2 and 3.
+
 For Pomodoro Technique, the LDR will trigger the countdown timer function when users start working (In this case: Users will plug the FOCUS signage on the lid, changing the amount of light that LDR receives) and the LED will remind users that the working time is up, and it is time to take a break. All components are wired up as below schematic.
 
 ![image](https://user-images.githubusercontent.com/52306317/148702099-e1fd7d39-2c12-4a52-a8e7-1c4af027d282.png)
@@ -45,11 +50,23 @@ For Pomodoro Technique, the LDR will trigger the countdown timer function when u
 Coding in Arduino IDE is an iterative process that requires several step-by-step testing to ensure the hardware, functions and libraries all work as estimated. 
 To use these sensors and actuators, multiple libraries are needed. Besides, there are six values about indoor environmental quality required to be shown on the LCD, so the automatic screen-scrolling effect is designed by coding.
 
+Refer to the test files in the repos to see how it works––
+
+1. **test_sgp30_DHT22_LCD**- https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_sgp30_DHT22_LCD
+2. **test_tcs34725**- https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_tcs34725
+
+
 Regarding the Pomodoro Technique, instead of using the delay function that will block other codes, the Timer library is adopted to support calling functions in/at/every specified unit of time (Michael Contreras, 2022). Here, the code will call an alert function every 25 minutes whenever the analogue reading of LDR is below 100 caused by the coverage of FOCUS signage. And the alert function will make LED start blinking 5 times.
+
+Refer to the test files in the repos to see how it works––
+1. **test_PomodoroTimer**– https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/test_PomodoroTimer
+
+note: You should wire up LDR before testing and the countdown time for the testing file is 5 sec.
+
 
 As for The Things Uno board, Serial is reserved for USB CDC communication, while Serial 1 is used for communicating via TTL serial on pin 0 (RX) and pin 1 (TX) which allows communication between The Things Uno and the microchip LoRa module (Arduino). Also, it is important to get the information of the board such as DevEUI (a unique identifier assigned by manufacturer) and AppEUI (a global application ID) in the beginning. And since the bandwidth is a fixed resource that is shared by many devices and there is a limited airtime (LoRa-Developers, 2021), it is necessary to minimize the size of the payload by converting sensor values to unsigned integers––uint16_t––which contains 16 bits for a word. In the end, ttn.sendBytes() is used to send messages with an array of bytes and their size (The Things Network, 2021d).
 
-
+1.
 
 
 ### 3. The Things Network Setup
