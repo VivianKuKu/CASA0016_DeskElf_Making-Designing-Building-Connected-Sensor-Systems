@@ -90,15 +90,15 @@ https://user-images.githubusercontent.com/52306317/148792711-05a1179f-6dff-44d0-
 The Things Network (TTN) is a global, open, and crowd-sourced initiative to create an Internet of Things data network over LoRaWAN technology. Apart from setting up for Arduino IDE and TTN account, there are several issues should be considered.
 
 
-* **Check the coverage of the LoRa gateway: ** [TTN Mapper](https://ttnmapper.org/heatmap/)
+* **Check the coverage of the LoRa gateway:** [TTN Mapper](https://ttnmapper.org/heatmap/)
 
-* **Check the Frequency Plan: ** [TTN Frequency Plan by Country](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country/) and [TTN Frequency Plans](https://www.thethingsnetwork.org/docs/lorawan/frequency-plans/)
+* **Check the Frequency Plan:** [TTN Frequency Plan by Country](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country/) and [TTN Frequency Plans](https://www.thethingsnetwork.org/docs/lorawan/frequency-plans/)
 
 (note: DeskElf uses EU863-870 as it is based in the United Kingdom, you should change it to your frequency plan according to your location)
 
 * **Check the limitation of TTN:** [TTN Limitation](https://www.thethingsnetwork.org/docs/lorawan/limitations/)
 
-* **Check the further data application: ** [TTN data application](https://www.thethingsnetwork.org/docs/applications/mqtt/)
+* **Check the further data application:** [TTN data application](https://www.thethingsnetwork.org/docs/applications/mqtt/)
 
 
 ### 4. Enclosure Design and 3D Printing
