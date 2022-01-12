@@ -109,7 +109,7 @@ The enclosure of DeskElf contains three parts–– signage, lid and base. The s
 DeskElf is printed by Prusa 3D printer and you can find out the [3D printing files](https://github.com/VivianKuKu/CASA0016_DeskElf_Making-Designing-Building-Connected-Sensor-Systems/tree/main/Enclosure_3D%20printing) in the repo.
 
 * .stl: 3D model file format which can be used in Fusion360 or other CAS softwares
-* .3mf: Open source file format which can be used in PrusaSlicer
+* .3mf: Open source file format which can be used in [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/)
 
 
 ## Reflection
